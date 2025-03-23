@@ -1,6 +1,134 @@
 @import "tailwindcss";
 
+
+:root {
+  --visceral-rojo: #F90000;
+  --visceral-negro: #000000;
+  --visceral-rosa: #FF92BF;
+  --visceral-blanco: #FFFFFF;
+}
+
+
+@font-face {
+  font-family: 'Nohemi-Bold';
+  src: url('/src/static/fonts/Nohemi-Bold.ttf');
+}
+@font-face {
+  font-family: 'Nohemi-SemiBold';
+  src: url('/src/static/fonts/Nohemi-SemiBold.ttf');
+}
+@font-face {
+  font-family: 'Nohemi-Light';
+  src: url('/src/static/fonts/Nohemi-Light.ttf');
+}
+@font-face {
+  font-family: 'Nohemi-Medium';
+  src: url('/src/static/fonts/Nohemi-Medium.ttf');
+}
+@font-face {
+  font-family: 'Nohemi';
+  src: url('/src/static/fonts/Nohemi-Regular.ttf');
+}
+
+@font-face {
+  font-family:'PPEditorial' ;
+  src: url('/src/static/fonts/PPEditorialNew-Italic.otf');
+}
+
+@font-face {
+  font-family: 'PPMondwest';
+  src: url( '/src/static/fonts/PPMondwest-Regular.otf');
+}
+
+.font-nohemi {
+  font-family: 'Nohemi', sans-serif;
+}
+
+.font-nohemiBold {
+  font-family: 'Nohemi-Bold', sans-serif;
+}
+
+.font-nohemiSemi {
+  font-family: 'Nohemi-SemiBold', sans-serif;
+}
+
+.font-nohemiMedium {
+  font-family: 'Nohemi-Medium', sans-serif;
+}
+
+.font-nohemiLight {
+  font-family: 'Nohemi-Light', sans-serif;
+}
+
+.font-PPEditorial {
+  font-family: 'PPEditorial', sans-serif;
+}
+
+.font-PPMondwest {
+  font-family: 'PPMondwest', sans-serif;
+}
+
+
+
 body {
-    width: 100%;
-    height: 100%;
+  width: 100vw;
+  height: 100vh;
+}
+
+.bg-cuadriculado{
+  background-image: 
+    repeating-conic-gradient(#D4D5D9 0% 25%, #FFFFFF 0% 50%);
+  background-size: 50px 50px;
+}
+
+.bg-visceral-rojo {
+  background-color: var(--visceral-rojo);
+}
+
+.bg-visceral-negro{
+  background-color: var(--visceral-negro);
+}
+
+.bg-visceral-rosa {
+  background-color: var(--visceral-rosa);
+}
+
+.bg-visceral-blanco {
+  background-color: var(--visceral-blanco);
+}
+
+.text-visceral-rojo{
+  color: var(--visceral-rojo)
+}
+
+.text-visceral-rosa{
+  color:var(--visceral-rosa)
+}
+
+.text-visceral-negro{
+  color:var(--visceral-negro)
+}
+
+.border-visceral-rojo{
+  border-color: var(--visceral-rojo);
+}
+
+
+.text-title {
+  color: var(--visceral-rojo);
+  -webkit-text-stroke: 2px black;
+  transform: scaleY(2);
+  transform-origin: center; 
+  display: inline-block;
+  line-height: 1;
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    
+  }
 }

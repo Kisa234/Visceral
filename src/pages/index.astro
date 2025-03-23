@@ -1,9 +1,96 @@
 ---
+import TagInverted from '../components/tag-inverted.astro';
+import Tag from '../components/tag.astro';
 import Layout from '../layouts/Layout.astro';
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 <Layout>
-	
+    <div class="bg-cuadriculado h-[90%] w-screen flex items-center justify-center mt-18">
+        <!-- <h1 class=" text-[380px] text-center font-ppMondwest text-title">VISCERAL</h1> -->
+        <div class="w-[60%] bg-visceral-negro flex flex-col p-10 rounded-xl border-2 border-visceral-rojo  pb-0">
+            <div class="flex flex-1 text-visceral-rojo font-nohemi w-[40%]">
+                <p>
+                    UNA PLATAFORMA DE ARTE, CULTURA
+                    POP Y MÚSICA. DISEÑADA PARA INSPIRAR 
+                    Y CONECTAR A CREATIVOS CON CONTENIDO
+                    AUTÉNTICO Y RELEVANTE.
+                </p>
+            </div>
+            <div class="flex flex-2 items-end flex-col">
+                <div class="">
+                    <TagInverted text="ARTE"/>
+                    <Tag text="MÚSICA"/>
+                </div>
+                <div class="mt-1">
+                    <Tag text="DISEÑO GRÁFICO"/>
+                    <TagInverted text="ARQUITECTURA"/>
+                </div>
+                <div class="mt-1">
+                    <TagInverted text="INTERIORISMO"/>
+                    <Tag text="CINE"/>
+                </div>
+                <div class="mt-1">
+                    <Tag text="TENDENCIAS"/>
+                    <TagInverted text="INTERNET"/>
+                </div>
+            </div>
+            <div class="flex flex-1 justify-end mt-10">
+                <img src="/Logos_Visceral-07.png" alt="logo-visceral-studio-rojo" class="max-w-40">
+            </div>
+        </div>
+    </div>
+
+    <div class="flex font-nohemi">
+        <div class="flex flex-col flex-1">
+            <div class="border p-8">
+                <span class="font-bold text-4xl ">News</span>
+            </div>
+            <div class="flex justify-between border p-4 bg-visceral-rosa">
+                <span class="font-bold ">EUSEXUA: LA ÚLTIMA OBRA DE ARTE DE FKA</span> <span>18/02/2025</span>
+            </div>
+            <div class="flex justify-between border p-4 bg-visceral-rojo">
+                <span class="font-bold ">ANIVERSARIO SOPHIE: UNA REVOLUCIÓN DEL PC MUSIC</span> <span>18/02/2025</span>
+            </div>
+            <div class="flex justify-between border border-black p-4 bg-visceral-negro text-white">
+                <span class="font-bold">MOTOMAMI: CONCEPTOS QUE MARCAN HISTORIAS</span> <span>18/02/2025</span>
+            </div>
+
+        </div>
+        <div class="flex flex-col flex-1">
+            <div class="border p-8">
+                <span class="font-bold text-4xl ">Contact</span>
+            </div>
+            <div class="border p-4">
+                <span class="font-bold ">COLABORACIONES E INFO</span> <span>hola@visceral.pe</span>
+            </div>
+            <div class="border p-4">
+                <span class="font-bold ">SOLICITUDES STUDIO</span> <span>studio@visceral.pe</span>
+            </div>
+            <div class="border p-4">
+                <span class="font-bold ">ACEPTANDO SOLICITUDES</span> <span>SI</span>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="w-screen flex items-center justify-center py-18">
+        <div class="w-[60%] mx-auto p-4 font-nohemi text-2xl">
+          <p class="text-justify">
+            <img src="/Logos_Visceral-03.png" alt="logo-visceral-dibujo-globo" class="float-left max-w-60 " />
+            es una plataforma donde el arte se siente en carne viva. Aquí, exploramos el arte con una 
+            <span class="font-PPEditorial italic">perspectiva audaz</span> y sin concesiones. Somos un espacio para quienes buscan experiencias 
+            <span class="font-PPEditorial italic">auténticas, intensas y cargadas de propósito</span>. 
+            <span class="font-PPMondwest font-bold">En Visceral, cada historia, concepto y creación</span> refleja la esencia cruda y poderosa del arte en su forma más pura. 
+            <span class="font-PPEditorial italic">Nos movemos con claridad</span>, nos expresamos con pasión, y siempre vamos al núcleo de lo que importa.
+          </p>
+        </div>
+    </div>
+
+
+    <div class="bg-cuadriculado">
+    </div>
+
 </Layout>
