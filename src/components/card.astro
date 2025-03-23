@@ -1,0 +1,36 @@
+---
+
+import Tag from "./tag.astro";
+const {class : className } = Astro.props
+---
+
+<card class={`${className} font-nohemi`}>
+    <div class="p-12">
+
+        <div class="flex justify-between items-center ">
+            <div class="flex items-center">
+                <span class="text-7xl font-nohemiBold">Motomami</span>
+                <span class="ml-2 text-lg leading-tight font-nohemiSemi">
+                  CONCEPTOS QUE<br> MARCAN HISTORIAS
+                </span>
+              </div>              
+            <div class="">
+                <Tag class="text-2xl border-visceral-rosa bg-visceral-rosa" text="MUSIC"/>
+                <Tag class="text-2xl border-visceral-azul text-visceral-azul font-PPEditorial" text="REVIEW"/>
+            </div>
+        </div>
+        <div class="my-2">
+            <img src="/MotoMami.webp" alt="rosalia-motomami" class="w-full "/>
+        </div>
+        <div class="flex justify-between items-center mt-4 ">
+            <p class="flex-1">
+                El artwork para &lt;eusexua&gt; refleja la evolución artística de
+                @fkatwigs, quien, con una estética audaz y surrealista,
+                demuestra su capacidad para superar sus propios límites.
+            </p>    
+            <Tag class=" text-xl border-visceral-rojo bg-visceral-negro text-visceral-rojo w-fit" text="LEE EL ARTÍCULO AQUÍ"/>
+        </div>
+            
+    </div>
+
+</card>

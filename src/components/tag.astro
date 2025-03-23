@@ -1,7 +1,8 @@
 ---
 const { text } = Astro.props;
+const {class : className } = Astro.props
 ---
 
-<span class="rounded-2xl bg-visceral-negro border-2 border-visceral-rojo  text-visceral-rojo font-nohemi inline-block p-2 px-4">
+<span class={`rounded-2xl border-3  font-nohemi inline-block p-2 px-4 ${className} flex items-center justify-center`}>
   {text}
 </span>
