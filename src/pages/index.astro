@@ -8,39 +8,53 @@ import Layout from '../layouts/Layout.astro';
 ---
 <Layout>
     <!-- HER0 -->
-    <div class="bg-cuadriculado h-[90%] w-screen flex items-center justify-center mt-18">
+    <div class="relative bg-cuadriculado h-[90%] w-screen flex items-center justify-center  mt-18 ">
         <!-- <h1 class=" text-[380px] text-center font-ppMondwest text-title">VISCERAL</h1> -->
-        <div class="w-[60%] bg-visceral-negro flex flex-col p-10 rounded-xl border-2 border-visceral-rojo  pb-0">
-            <div class="flex flex-1 text-visceral-rojo font-nohemiLight w-[60%] text-2xl">
-                <p>
-                    UNA PLATAFORMA DE ARTE, CULTURA
-                    POP Y MÚSICA. DISEÑADA PARA INSPIRAR 
-                    Y CONECTAR A CREATIVOS CON CONTENIDO
-                    AUTÉNTICO Y RELEVANTE.
-                </p>
-            </div>
-            <div class="flex flex-2 items-end flex-col">
-                <div class="">
-                    <Tag class="bg-visceral-rojo "text="ARTE"/>
-                    <Tag class="text-visceral-rojo b-visceral-rojo"text="MÚSICA"/>
+        
+        <div class="w-[90%]  flex items-center justify-end">
+            <div class="w-[62%]  bg-visceral-negro flex flex-col p-10 rounded-xl border-2 border-visceral-rojo  pb-0">
+                <div class="flex flex-1 text-visceral-rojo font-nohemiLight w-[60%] text-2xl">
+                    <p>
+                        UNA PLATAFORMA DE ARTE, CULTURA
+                        POP Y MÚSICA. DISEÑADA PARA INSPIRAR 
+                        Y CONECTAR A CREATIVOS CON CONTENIDO
+                        AUTÉNTICO Y RELEVANTE.
+                    </p>
                 </div>
-                <div class="mt-1">
-                    <Tag class="text-visceral-rojo b-visceral-rojo"text="DISEÑO GRÁFICO"/>
-                    <Tag class="bg-visceral-rojo "text="ARQUITECTURA"/>
+                <div class="flex flex-2 items-end flex-col">
+                    <div class="">
+                        <Tag class="bg-visceral-rojo "text="ARTE"/>
+                        <Tag class="text-visceral-rojo b-visceral-rojo"text="MÚSICA"/>
+                    </div>
+                    <div class="mt-1">
+                        <Tag class="text-visceral-rojo b-visceral-rojo"text="DISEÑO GRÁFICO"/>
+                        <Tag class="bg-visceral-rojo "text="ARQUITECTURA"/>
+                    </div>
+                    <div class="mt-1">
+                        <Tag class="bg-visceral-rojo "text="INTERIORISMO"/>
+                        <Tag class="text-visceral-rojo b-visceral-rojo"text="CINE"/>
+                    </div>
+                    <div class="mt-1">
+                        <Tag class="text-visceral-rojo b-visceral-rojo"text="TENDENCIAS"/>
+                        <Tag class="bg-visceral-rojo "text="INTERNET"/>
+                    </div>
                 </div>
-                <div class="mt-1">
-                    <Tag class="bg-visceral-rojo "text="INTERIORISMO"/>
-                    <Tag class="text-visceral-rojo b-visceral-rojo"text="CINE"/>
+                <div class="flex flex-1 justify-end mt-10">
+                    <img src="/Logos_Visceral-07.png" alt="logo-visceral-studio-rojo" class="max-w-40">
                 </div>
-                <div class="mt-1">
-                    <Tag class="text-visceral-rojo b-visceral-rojo"text="TENDENCIAS"/>
-                    <Tag class="bg-visceral-rojo "text="INTERNET"/>
-                </div>
-            </div>
-            <div class="flex flex-1 justify-end mt-10">
-                <img src="/Logos_Visceral-07.png" alt="logo-visceral-studio-rojo" class="max-w-40">
+
             </div>
         </div>
+
+        <div class="absolute inset-0  z-10">
+            <img class="absolute left-120 top-40 max-h-[250px] border-2 border-visceral-rojo " src="/imagenes/visceral_web_imagenes-02.png" alt="">
+            <img class="absolute right-17 top-35 max-h-[170px] border-2 border-visceral-rojo " src="/imagenes/visceral_web_imagenes-03.png" alt="">
+            <img class="absolute left-50  top-50 max-h-[300px] border-2" src="/imagenes/visceral_web_imagenes-05.png" alt="">
+            <img class="absolute left-50  top-145 max-h-[170px] border-2" src="/imagenes/visceral_web_imagenes-04.png" alt="">
+            <img class="absolute right-230 top-100  max-h-[200px] border-2 border-visceral-rojo " src="/imagenes/visceral_web_imagenes-07.png" alt="">
+            <img class="absolute right-125 top-100  max-h-[350px] border-2 border-visceral-rojo " src="/imagenes/visceral_web_imagenes-06.png" alt="">
+        </div>
+
     </div>
 
     <!-- NEWS & CONTACT -->
@@ -106,7 +120,46 @@ import Layout from '../layouts/Layout.astro';
     </div>
 
     <!-- FOTOS -->
-    <div class="bg-cuadriculado">
+    <div class="bg-cuadriculado flex items-center justify-center w-screen py-18">
+        <div class="relative grid grid-cols-4 grid-rows-2  w-full max-w-[80%] max-h-[70vh]">
+            <!-- Primera columna  -->
+            <img src="/imagenes/visceral_web_imagenes-08.png" 
+                 alt="Lobo-blanco-diente" 
+                 class="col-start-1 row-start-1 row-span-2 w-full h-full object-cover">
+            
+            <!-- Segunda columna  -->
+            <img src="/imagenes/visceral_web_imagenes-15.png" 
+                 alt="Perro-casco-moto" 
+                 class="col-start-2 row-start-1 w-full h-full object-cover">
+            <img src="/imagenes/visceral_web_imagenes-13.png" 
+                 alt="2-Ratones-Blancos" 
+                 class="col-start-2 row-start-2 w-full h-full object-cover">
+            
+            <!-- Tercera columna -->
+            <img src="/imagenes/visceral_web_imagenes-14.png" 
+                 alt="Sapo-Verde-Pixeleado" 
+                 class="col-start-3 row-start-1 row-span-2 w-full h-full object-cover">
+            
+            <!-- Cuarta columna  -->
+            <img src="/imagenes/visceral_web_imagenes-16.png" 
+                 alt="Caballo-Blanco-LLamas" 
+                 class="col-start-4 row-start-1 w-full h-full object-cover">
+            <img src="/imagenes/visceral_web_imagenes-17.png" 
+                 alt="Ojos-Morados-Gatos" 
+                 class="col-start-4 row-start-2 w-full h-full object-cover">
+
+            <div class="absolute inset-0 flex items-center justify-center z-10">
+                    <img class="max-w-full max-h-full opacity-90" src="/imagenes/visceral_web_imagenes-09.png" alt="VISCERAL">
+            </div>
+
+        </div>
+
     </div>
+    
+    
+    
+    
+    
+    
 
 </Layout>
