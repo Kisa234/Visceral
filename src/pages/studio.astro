@@ -1,0 +1,194 @@
+---
+import Card from "../components/card.astro";
+import Tag from "../components/tag.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout>
+    <!-- HER0 -->
+    <section class="flex h-screen w-screen mt-19">
+        <!-- Mitad izquierda: negra -->
+        <div class="w-1/2 h-full bg-cuadriculado">
+        
+        </div>
+      
+        <!-- Mitad derecha: roja -->
+        <div class="w-1/2 h-full bg-visceral-rojo font-nohemiLight">
+            <div class="text-black m-20  h-[80%] flex flex-col justify-between">
+                <h1 class="text-7xl font-medium">
+                  APASIONADOS POR <br />
+                  LAS MARCAS, <br />
+                  <span class="font-PPEditorial">AMANTES</span> DE LAS <br />
+                  TIPOGRAFÍAS <br />
+                  Y EL <span class="font-PPEditorial">DISEÑO</span> <br />
+                  EDITORIAL.
+                </h1>
+          
+                <p class="mt-10 text-3xl font-nohemi">
+                  <span class="px-1 font-nohemiBold">VISCERAL</span> 
+                  ES UN ESTUDIO DE <br />
+                  BRANDING Y MARKETING DIGITAL <br />
+                  CON BASE EN LIMA.
+                </p>
+              </div>
+    </section>
+    
+    <!-- Servicios -->
+    <section class="w-full border">
+        <div class="w-full flex content-center m-7">
+          <h2 class="text-5xl font-nohemiBold">SERVICIOS</h2>
+        </div>
+      
+        <div class="grid grid-cols-2 gap-0 border-t border-black font-nohemi ">
+          
+          <!-- Servicio 1: ADN DE MARCA -->
+          <div class="border-r border-black flex flex-col h-full">
+            <div class=" bg-visceral-rosa text-black font-bold text-2xl p-4 border-b border-black">
+              ADN DE MARCA
+            </div>
+            <div class=" p-5 flex flex-col justify-between  leading-relaxed uppercase text-xl">
+              Te ayudamos a construir o reconstruir tu marca partiendo del propósito y haciendo un viaje profundo por los valores, posicionamiento, personalidad e incluso tono de comunicación:
+              <br><br>
+              <span class="font-nohemiBold">
+                INVESTIGACIÓN A PROFUNDIDAD / PROPÓSITO / VALORES / POSICIONAMIENTO / PERSONALIDAD / CLAIM
+              </span>
+            </div>
+          </div>
+      
+          <!-- Servicio 2: BRAND IDENTITY -->
+          <div class="flex flex-col h-full">
+            <div class="bg-visceral-negro text-white font-bold text-2xl p-4 border-b border-black">
+              BRAND IDENTITY
+            </div>
+            <div class=" p-5 flex flex-col justify-between  leading-relaxed uppercase text-xl">
+              Enlazamos tu propósito a una propuesta que compone todos los elementos creativos fundamentales que toda marca necesita para impactar y calar en el mercado: desde el logotipo, la paleta de colores hasta la tipografía e imágenes personalizadas.
+              <br><br>
+              <span class="font-nohemiBold">
+                NAMING / LOGOTIPO / SISTEMA GRÁFICO / MANUAL DE MARCA
+              </span>
+            </div>
+          </div>
+      
+          <!-- Servicio 3: PACKAGING -->
+          <div class="border-t border-r border-black flex flex-col h-full">
+            <div class="bg-visceral-rojo font-bold text-2xl p-4 border-b border-black">
+              PACKAGING
+            </div>
+            <div class="p-5 flex flex-col justify-between  leading-relaxed uppercase text-xl">
+              Creamos empaques que ayudan a tu marca a resaltar, diferenciarse e innovar en el mercado. A partir de nuestro ADN y una investigación profunda del mercado y la categoría creamos la envoltura, botella o caja que conecte con tu producto.
+              <br><br>
+              <span class="font-nohemiBold">
+                CAJAS PARA ENVÍO / CAJAS DE PRODUCTO / DISEÑO DE BOLSAS / DISEÑO DE ETIQUETAS DE PRODUCTO / TARJETAS DE AGRADECIMIENTO / STICKERS
+              </span>
+            </div>
+          </div>
+      
+          <!-- Servicio 4: GESTIÓN DE REDES SOCIALES -->
+          <div class="border-t border-black flex flex-col h-full">
+            <div class=" bg-visceral-azul text-white font-bold text-2xl p-4 border-b border-black">
+              GESTIÓN DE REDES SOCIALES
+            </div>
+            <div class=" p-5 flex flex-col justify-between  leading-relaxed uppercase text-xl">
+              Las redes sociales son la voz de la marca, representan la conversación diaria que se busca tener con la audiencia, y como sabemos nadie escucha una conversación aburrida. Con una sólida estrategia de comunicación y la selección del ecosistema digital idóneo, desarrollamos contenido de valor para todas las marcas.
+              <br><br>
+              <span class="font-nohemiBold">
+                ESTRATEGIA DE COMUNICACIÓN / DESARROLLO DE ECOSISTEMA / PAUTA DIGITAL / PILARES DE CONTENIDO / CONTENIDO DE VALOR
+              </span>
+            </div>
+          </div>
+      
+        </div>
+    </section>
+
+    <!-- PORTAFOLIO -->
+    <section class="w-full border bg-visceral-negro text-white border-black ">
+        <div class="w-full flex content-center m-7">
+            <h2 class="text-5xl font-nohemiBold">PORTAFOLIO</h2>
+        </div>
+    </section>
+    <section class="flex flex-col">
+        <div class="flex border">
+            <Card class="border-r"></Card>
+            <Card class=""></Card>
+        </div>
+        <div class="flex border border-t-0">
+            <Card class="border-r"></Card>
+            <Card></Card>
+        </div>
+    
+    </section>
+    
+    <!-- PROYECTOS -->
+
+    <section class="w-full border-t border-black">
+  
+        <!-- Proyecto 1 -->
+        <div class="flex items-center border-b border-black py-6">
+          <!-- Texto -->
+          <div class="flex  gap-4 w-1/2 pl-8">
+            <h3 class="text-2xl font-nohemiBold">PING PONG LOS GATOS</h3>
+            <div class="flex flex-wrap gap-2">
+              <Tag text="2022" class="text-xl font-nohemiSemi  border-none bg-visceral-rojo text-visceral-negro" />
+              <Tag text="AGENCIA" class="text-xl font-nohemiSemi  border-visceral-rojo text-red-500" />
+              <Tag text="BRANDING" class="text-xl font-nohemiSemi  border-none bg-visceral-azul text-visceral-rosa" />
+            </div>
+          </div>
+      
+          <!-- Imagenes -->
+          <div class="flex flex-wrap gap-4 w-1/2 pr-8">
+            <img src="/MotoMami.webp" class="w-24 h-24 object-cover" alt="Proyecto Ping Pong" />
+            <img src="/MotoMami.webp" class="w-24 h-24 object-cover" alt="Proyecto Ping Pong" />
+            <img src="/MotoMami.webp" class="w-24 h-24 object-cover" alt="Proyecto Ping Pong" />
+          </div>
+        </div>
+      
+        <!-- Proyecto 2 -->
+        <div class="flex items-center border-b border-black py-6">
+          <div class="flex  gap-4 w-1/2 pl-8">
+            <h3 class="text-2xl font-nohemiBold">TARKKA SD</h3>
+            <div class="flex flex-wrap gap-2">
+                <Tag text="2022" class="text-xl font-nohemiSemi  border-none bg-visceral-rosa text-visceral-negro" />
+                <Tag text="INMOBILIARIAS" class="text-xl font-nohemiSemi  border-visceral-rojo text-red-500" />
+                <Tag text="BRANDING" class="text-xl font-nohemiSemi  border-none bg-visceral-azul text-visceral-rosa" />
+            </div>
+          </div>
+          <div class="flex flex-wrap gap-4 w-1/2 pr-8">
+            <img src="/MotoMami.webp" class="w-24 h-24 object-cover" alt="Proyecto Tarkka" />
+            <img src="/MotoMami.webp" class="w-24 h-24 object-cover" alt="Proyecto Tarkka" />
+          </div>
+        </div>
+      
+        <!-- Proyecto 3 -->
+        <div class="flex items-center border-b border-black py-6">
+          <div class="flex  gap-4 w-1/2 pl-8">
+            <h3 class="text-2xl font-nohemiBold">HACIENDA PIEDRA BLANCA</h3>
+            <div class="flex flex-wrap gap-2">
+                <Tag text="2022" class="text-xl font-nohemiSemi  border-none bg-visceral-rojo text-visceral-negro" />
+                <Tag text="COMIDA" class="text-xl font-nohemiSemi  border-visceral-rojo text-red-500" />
+                <Tag text="BRANDING" class="text-xl font-nohemiSemi   border-visceral-rosa text-visceral-rosa" />
+            </div>
+          </div>
+          <div class="flex flex-wrap gap-4 w-1/2 pr-8">
+            <img src="/MotoMami.webp" class="w-24 h-24 object-cover" alt="Proyecto Hacienda" />
+            <img src="/MotoMami.webp" class="w-24 h-24 object-cover" alt="Proyecto Hacienda" />
+          </div>
+        </div>
+      
+        <!-- Proyecto 4 -->
+        <div class="flex items-center py-6">
+          <div class="flex gap-4 w-1/2 pl-8">
+            <h3 class="text-2xl font-nohemiBold">BERDE</h3>
+            <div class="flex flex-wrap gap-2">
+                <Tag text="2022" class="text-xl font-nohemiSemi border-visceral-azul text-visceral-azul" />
+                <Tag text="INTERIORES" class="text-xl font-nohemiSemi  border-visceral-rojo text-red-500" />
+                <Tag text="BRANDING" class="text-xl font-nohemiSemi  border-none bg-visceral-azul text-visceral-rosa" />
+            </div>
+          </div>
+          <div class="flex flex-wrap gap-4 w-1/2 pr-8">
+            <img src="/MotoMami.webp" class="w-24 h-24 object-cover" alt="Proyecto Berde" />
+            <img src="/MotoMami.webp" class="w-24 h-24 object-cover" alt="Proyecto Berde" />
+          </div>
+        </div>
+      
+      </section>
+</Layout>  

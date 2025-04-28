@@ -97,6 +97,9 @@ body {
 .bg-visceral-blanco {
   background-color: var(--visceral-blanco);
 }
+.bg-visceral-azul{
+  background-color: var(--visceral-azul);
+}
 
 .text-visceral-rojo{
   color: var(--visceral-rojo)

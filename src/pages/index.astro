@@ -8,10 +8,9 @@ import Layout from '../layouts/Layout.astro';
 ---
 <Layout>
     <!-- HER0 -->
-    <div class="relative bg-cuadriculado h-[90%] w-screen flex items-center justify-center  mt-18 ">
+    <section class="relative bg-cuadriculado h-[90%] w-screen flex items-center justify-center  mt-18 ">
         <!-- <h1 class=" text-[380px] text-center font-ppMondwest text-title">VISCERAL</h1> -->
-        
-        <div class="w-[90%]  flex items-center justify-end">
+        <div class="w-[90%]  flex items-center justify-end z-5">
             <div class="w-[62%]  bg-visceral-negro flex flex-col p-10 rounded-xl border-2 border-visceral-rojo  pb-0">
                 <div class="flex flex-1 text-visceral-rojo font-nohemiLight w-[60%] text-2xl">
                     <p>
@@ -55,10 +54,14 @@ import Layout from '../layouts/Layout.astro';
             <img class="absolute right-125 top-100  max-h-[350px] border-2 border-visceral-rojo " src="/imagenes/visceral_web_imagenes-06.png" alt="">
         </div>
 
-    </div>
+        <div class="absolute inset-0 flex items-center justify-center z-1">
+            <img class="max-w-full max-h-full opacity-90" src="/imagenes/visceral_web_imagenes-11.png" alt="VISCERAL">
+        </div>
+        
+    </section>
 
     <!-- NEWS & CONTACT -->
-    <div class="flex font-nohemi">
+    <section class="flex font-nohemi">
         <div class="flex flex-col flex-1">
             <div class="border p-8">
                 <span class="font-bold text-4xl ">News</span>
@@ -89,11 +92,10 @@ import Layout from '../layouts/Layout.astro';
             </div>
 
         </div>
-    </div>
+    </section>
 
     <!-- LAST NEWS -->
-
-    <div class="flex flex-col">
+    <section class="flex flex-col">
         <div class="flex border">
             <Card class="border-r"></Card>
             <Card class=""></Card>
@@ -103,10 +105,10 @@ import Layout from '../layouts/Layout.astro';
             <Card></Card>
         </div>
 
-    </div>
+    </section>
 
     <!-- TEXTO -->
-    <div class="w-screen flex items-center justify-center p-10">
+    <section class="w-screen flex items-center justify-center p-10">
         <div class="w-full mx-auto p-4 font-nohemiLight text-visceral-frase ">
           <p class="text-justify">
             <img src="/Logos_Visceral-03.png" alt="logo-visceral-dibujo-globo" class="float-left max-w-lg" />
@@ -117,10 +119,10 @@ import Layout from '../layouts/Layout.astro';
             <span class="font-PPEditorial italic">Nos movemos con claridad</span>, nos expresamos con pasión, y siempre vamos al núcleo de lo que importa.
           </p>
         </div>
-    </div>
+    </section>
 
     <!-- FOTOS -->
-    <div class="bg-cuadriculado flex items-center justify-center w-screen py-18">
+    <section class="bg-cuadriculado flex items-center justify-center w-screen py-18">
         <div class="relative grid grid-cols-4 grid-rows-2  w-full max-w-[80%] max-h-[70vh]">
             <!-- Primera columna  -->
             <img src="/imagenes/visceral_web_imagenes-08.png" 
@@ -154,12 +156,6 @@ import Layout from '../layouts/Layout.astro';
 
         </div>
 
-    </div>
+    </section>
     
-    
-    
-    
-    
-    
-
 </Layout>
