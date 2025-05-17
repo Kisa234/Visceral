@@ -1,16 +1,126 @@
 ---
 import Layout from "../layouts/Layout.astro"
+import Tag from "../components/tag.astro"
+import Card from "../components/card.astro"
 ---
 
 <Layout>
-    <div class="w-full h-full mt-18 bg-visceral-negro">
-
-        <div class="w-full bg-visceral-negro border-b border-b-white text-4xl text-white p-8 font-nohemiBold flex align-top">
-            <h1>TARKKA SDA</h1>
-            <sub class="font-nohemi text-[10px]">
+    <div class="w-full  mt-18 bg-visceral-negro font-nohemi text-white">
+        <!-- TITLE -->
+        <div class="w-full bg-visceral-negro border-b border-b-white text-7xl  p-8 font-nohemiBold flex align-top">
+            <h1 class="mr-5">TARKKA SDA</h1>
+            <sub class="font-nohemi text-sm/2 leading-relaxed">
                 ES MOMENTO DE CONTAR
+                <br/>
                 TU HISTORIA
-            </sub>
+            </p>
         </div>
+
+        <!-- BODY -->
+        <div class="flex border-white  text-2xl">
+          <!-- Columna 1: 5 filas -->
+          <div class="flex-2 flex-col border-r border-white ">
+            <div class="border-b border-white flex-1 p-8  text-justify">
+                <p>
+                    Nuestra misión está orientada
+                    hacia el servicio; identificando las
+                    necesidades de nuestros
+                    clientes, manteniendo una
+                    constante comunicación en
+                    donde lo más importante es el
+                    cumplimiento de las metas
+                    trazadas, convirtiéndonos en
+                    parte de su crecimiento
+                    brindando un servicio innovador
+                    y personalizado. Ser una
+                    empresa líder en la construcción,
+                    diseño y proyectos de espacios
+                    arquitectónicos en el país,
+                    integrada por un equipo de
+                    personas comprometidas a
+                    cubrir las necesidades de
+                    nuestros clientes.
+                </p>
+            </div>
+            <div class="border-b border-white flex-1 p-8 flex justify-between items-center">
+                <p>FECHA</p> 
+                <Tag text="2022" class="bg-visceral-rojo border-visceral-rojo text-visceral-negro font-nohemiBold"/>
+            </div>
+            <div class="border-b border-white flex-1 p-8 flex justify-between items-center">
+                <p>RUBRO</p> 
+                <Tag text="ARQUITECTURA" class="bg-visceral-azul border-visceral-azul text-visceral-rosa font-nohemiBold"/>
+                
+            </div>
+            <div class="border-b border-white gap-5 flex-1 p-8 flex justify-between items-center">
+                <p class="font-nohemiBold">SERVICIOS</p> 
+                <div class="text-right">
+                    <Tag text="BRANDING" class="m-1 bg-visceral-negro border-visceral-rojo text-visceral-rojo font-nohemiBold"/>
+                    <Tag text="ARQUITECTURA" class=" m-1 bg-visceral-azul border-visceral-azul text-visceral-rosa font-nohemiBold"/>
+                    <Tag text="2022" class="m-1 bg-visceral-negro border-visceral-azul text-visceral-azul font-nohemiBold"/>
+                    <Tag text="BRANDING" class="m-1 bg-visceral-negro border-visceral-rosa text-visceral-rosa font-nohemiBold"/>
+                    <Tag text="2022" class=" m-1 bg-visceral-rojo border-visceral-rojo text-visceral-negro font-nohemiBold"/>
+
+                </div>
+            </div>
+            <div class="border-b border-white flex-1 p-8 flex justify-between items-center">
+                <p>FICHA TÉCNICA</p> 
+
+            </div>
+          </div>
+        
+          <!-- Columna 2: 2 columnas × 4 filas -->
+          <div class="flex-5 flex">
+            <div class="flex-1  border-r border-white">                
+                <div class="border-b border-white flex-1">
+                    <img src="/MotoMami.webp" class="p-8 object-cover" alt="Proyecto Berde" />
+                </div>
+                <div class="border-b border-white flex-1">
+                    <img src="/MotoMami.webp" class="p-8 object-cover" alt="Proyecto Berde" />
+                </div>
+                <div class=" flex-1">
+                    <img src="/MotoMami.webp" class="p-8 object-cover" alt="Proyecto Berde" />
+                </div>
+            </div>
+            <div class="flex-1">
+                <div class="border-b border-white flex-1">
+                    <img src="/MotoMami.webp" class="p-8 object-cover" alt="Proyecto Berde" />
+                </div>
+                <div class="border-b border-white flex-1">
+                    <img src="/MotoMami.webp" class="p-8 object-cover" alt="Proyecto Berde" />
+                </div>
+                <div class=" flex-1">
+                    <img src="/MotoMami.webp" class="p-8 object-cover" alt="Proyecto Berde" />
+                </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SELECTOR PROYECT -->
+        <div class="flex w-full justify-between items-center p-8 border-t border-white text-2xl">
+          <div class="flex gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+            </svg>
+            <p class="font-PPEditorial">ANTERIOR</p>
+            <p class="font-nohemiBold">PROYECTO</p>
+          </div>
+          <div class="flex gap-2 text-right">
+            <p class="font-PPEditorial">PRÓXIMO</p>
+            <p class="font-nohemiBold">PROYECTO</p>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+            </svg>
+          </div>
+        </div>
+
+        <!-- PROJECTS -->
+         <section class="flex flex-col">
+        <div class="flex border">
+            <Card class="border-r"></Card>
+            <Card class=""></Card>
+        </div>
+        
+
+    </section>
     </div>
 </Layout>
